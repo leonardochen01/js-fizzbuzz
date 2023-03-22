@@ -1,15 +1,4 @@
-/*
-1. Selezionare il container 
-2.Ad ogni ciclo creare un nuovo div 
-3. Dare la classe box
-4. se è pari il bg è giallo
-5. Scrivere il numero nel box 
-6. Aggiungere il box al container 
 
-
-*/
-
-//1.
 const container = document.querySelector(".container");
 
 for (let i = 1; i <= 100; i++){
@@ -37,6 +26,7 @@ for (let i = 1; i <= 100; i++){
   //SE IL NUMERO NON è MULTIPLO NE DI 3 NE DI 5
   else {
     box.append(i);
+    box.classList.add('normal');
   }
 
   container.append(box);
